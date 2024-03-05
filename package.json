@@ -1,0 +1,27 @@
+{
+  "name": "code-with-prince",
+  "version": "1.0.0",
+  "description": "Creating React  app with Prince",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/princesinghrajput/react-with-prince.git"
+  },
+  "author": "prince",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/princesinghrajput/react-with-prince/issues"
+  },
+  "homepage": "https://github.com/princesinghrajput/react-with-prince#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  }
+}
