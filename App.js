@@ -1,85 +1,71 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
-
-const heading = React.createElement(
-  "h1",
-  {
-    id:"header",
-    className:"header"
-  },
-  "I am the Header!"
-  )
-
-
-  const root = ReactDOM.createRoot(document.getElementById("root"))
-  root.render(heading)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+import Heading from "./Heading";  //Importing from Heading
 /*
-  
+const container = React.createElement(
+  "div",
+  {
+    id: "container"
+
+  },
   [
     React.createElement(
       "h1",
       {
-        id:"head",
-        className:"h"
+        id:"heading1"
       },
-      "React with Prince singh"
-    ),
+      "Heading 1"
+    )
+  ],
+  [
     React.createElement(
-      "h3",
+      "h2",
       {
-        id:'heading-3'
+        id:"heading2"
       },
-      "I am Heading 3"
-
+      "Heading 2"
+    )
+  ],
+  [
+    React.createElement(
+      "p",
+      {
+        id:"paragraph"
+      },
+      "Paragraph"
     )
   ]
-)
 
-const root = ReactDOM.createRoot(document.getElementById("root"))
-root.render(heading)
+  )
 
-*/
+  */
+
+//JSX-- Class Based Components
+const container = (
+  <div id="container">
+    <h1 id="heading1">Heading 1</h1>
+    <h2 id="heading2">Heading 2</h2>
+    <p id="paragraph">Paragraph</p>
+    <h3>ndkjnkjs</h3>
+  </div>
+);
+
+
+
+//Functional components
+
+const Title = () => {
+  return (
+    <div>
+      <h1 className="heading1">I am the Title!</h1>
+      
+      <Heading/>      {/* Imported Components */}
+
+      
+    </div>
+  );
+};
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<Title />);
+
