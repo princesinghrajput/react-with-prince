@@ -1,25 +1,13 @@
 import React from "react";
+import Style from "./Header.module.css";
+const Header = () => {
+  let message = "Hello world";
 
-function Header() {
-    return (
-        <div className="Header">
-            <h1>My name is Prince</h1>
-        </div>
-    )
-    
-}
+  return (
+    <div className={Style.Title}>
+      <h1> message is : {message} </h1>  {/* You can write JavaScript code inside curly braces {} in the JSX */}
+    </div>
+  );
+};
 
-function MyAddress (){
-    return(
-        <div>
-            <h2>I live in Mohali</h2>
-        </div>
-    )
-}
-//named exports
-export {Header, MyAddress}
-
-
-
-//default exports
-// default export Header
+export default Header;

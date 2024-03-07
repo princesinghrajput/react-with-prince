@@ -1,11 +1,10 @@
-import {Header, MyAddress} from "./Header.js"  //named exports of Header & MyAddress from Header.jsx
+import './App.css'
+import Header from './Header';
+
 function App() {
   return (
     <div className="App">
-        <h1>React with Prince</h1>
-        <Header/>
-        <MyAddress/>
-       
+      <Header/>
     </div>
   );
 }
@@ -13,3 +12,17 @@ function App() {
 
 //default exports
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
