@@ -1,17 +1,19 @@
 import React from "react";
 import Products from "./Products";
-import "./ProductsTab.css";
-const ProductsTab = () => {
-  return (
-    <div className="ProductsTab">
-     
-     {/* writing Property inside components */}
-      <Products productTitle="Laptop" descriptions="This laptop is good for development" price="50k" />
-      <Products productTitle="mobile" descriptions="Buy this super smartphone now" price="30k"/>
-      <Products productTitle="iPad" descriptions="Good iphone" price="40k"/>
-      <Products productTitle="Pen" descriptions="Good Pen" price="20"/>
-    </div>
-  );  
-};
 
-export default ProductsTab;
+const ProductsTab= ()=>{
+  let option = [<l1>Hi Tech</l1>, <l1>Durable</l1>, <li>Effiecient</li>]   //array
+
+  // let option = {a:"Hi-Tech", b:"Durable", c:"Efficient"} //objects
+  
+  return(
+    <>
+      <Products title="laptop" descriptions="This laptop is very fast" price={10000} feature={option} />
+      <Products title="Mobile" descriptions="Buy this mobile at low cost" price={5000}  />
+      <Products title="iPad" descriptions="Good for taking notes" price={40000} />
+      
+    </>
+  )
+} 
+
+export default ProductsTab

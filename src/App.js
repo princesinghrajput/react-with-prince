@@ -1,6 +1,7 @@
 import './App.css'
-import ProductsTab from './ProductsTab';
+import Products from './Products';
 
+import ProductsTab from './ProductsTab';
 function App() {
   return (
     <div className="App">
