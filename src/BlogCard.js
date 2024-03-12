@@ -1,5 +1,5 @@
 import React from "react";
-import "./Body.css";
+import "./BlogCard.css";
 import avatar from "./assets/avatar.jpg";
 import img1 from "./assets/Article_Image (1).png";
 const BlogCard = () => {
