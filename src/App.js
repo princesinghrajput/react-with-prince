@@ -1,17 +1,18 @@
 import './App.css'
-import Products from './Products';
-
-import ProductsTab from './ProductsTab';
+import Body from './Body';
+import Footer from './Footer';
+import Header from './Header';
 function App() {
   return (
     <div className="App">
-      <ProductsTab/>
+    <Header/>
+    <Body/>
+    <Footer/>
     </div>
   );
 }
 
 
-//default exports
 export default App;
 
 

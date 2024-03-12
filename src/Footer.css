@@ -1,0 +1,73 @@
+
+.footer{
+    padding: 0px 120px 10px 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.training-blog{
+    display: flex;
+}
+.training-blog h3{
+    margin-right: 10px;
+    font-family: sans-serif;
+    margin-bottom: 0;
+}
+
+.category{
+    margin-left: 40px;
+}
+
+
+ul{
+    list-style-type: none;
+    margin-left: 0;
+}
+ul li{
+    margin-bottom: 10px;
+    font-family: sans-serif;
+}
+
+
+.blog-text{
+    color: #C32323;
+}
+.training{
+    width: 380px;
+}
+.category-text{
+    margin-left: 40px;
+    /* font-family: sans-serif; */
+}
+
+.icon-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px 0 5px;
+}
+
+.fa-brands{
+    font-size: 25px;
+}
+
+.footer-end{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 120px 0 120px;
+
+}
+
+.created{
+    opacity: 0.7;
+}
+
+.div-line{
+    height: 48px;
+    border: .5px solid black;
+    margin-top: 26px;
+    position: absolute;
+    left: 250px;
+    opacity: 0.3;
+    
+    
+}

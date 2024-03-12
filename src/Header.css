@@ -1,0 +1,93 @@
+.header {
+  height: 180px;
+  width: 100%;
+  box-shadow: 0px 4px 4px 0px #888888;
+  z-index: 100;
+}
+.chatterly {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.user-container {
+  display: flex;
+}
+
+.user-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-top: 6px;
+}
+
+.filter {
+  display: flex;
+  padding-left: 120px;
+  padding-right: 120px;
+  justify-content: space-between;
+}
+
+.filter-1 h4 {
+  margin-right: 145px;
+  margin-bottom: 0px;
+}
+
+.select-container {
+  margin-top: 5px;
+}
+.select-container select,
+.type-here {
+  background-color: #f0f1f1;
+  width: 161px;
+  padding: 8px 10px;
+  padding-right: 10px;
+  border: none;
+  border-radius: 25px;
+}
+
+.created h4 {
+  margin-left: 5px;
+  margin-bottom: 0;
+}
+
+.option-all {
+  margin-right: 5px;
+  padding-right: 10px;
+}
+
+select {
+  padding-right: 3px;
+}
+
+.created {
+  margin-right: 20px;
+}
+
+.filter-1 {
+  display: flex;
+}
+
+.filter-text {
+  margin: 45px;
+}
+
+.type-here {
+  padding-left: 20px;
+}
+
+.header-input {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  right: 5px;
+  top: 2px;
+}
+
+.shadow-hr {
+  margin-bottom: 10;
+}
