@@ -8,7 +8,7 @@ const ProductsTab= ()=>{
   
   return(
     <>
-      <Products title="laptop" descriptions="This laptop is very fast" price={10000} feature={option} />
+      <Products title="laptop" descriptions="This laptop is very fast" price={10000} feature={option} option={["Hi-tech", "Durable"]} />
       <Products title="Mobile" descriptions="Buy this mobile at low cost" price={5000}  />
       <Products title="iPad" descriptions="Good for taking notes" price={40000} />
       
