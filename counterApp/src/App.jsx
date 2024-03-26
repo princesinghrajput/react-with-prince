@@ -1,14 +1,11 @@
 import "./App.css";
-import LotteryGame from "./components/LotteryGame";
-// import TodoList from "./components/TodoList";
-// import Ludo from "./components/Ludo";
-
+import TicketNum from "./components/TicketNum";
+import Ticket from "./components/Ticket";
 
 function App() {
   return (
     <div>
- 
-    <LotteryGame/>
+   <Ticket ticket={[2,3,4]}/>
     </div>
   );
 }
