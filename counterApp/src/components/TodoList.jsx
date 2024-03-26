@@ -39,18 +39,19 @@ const TodoList = () => {
 
   //convert it into callback
   let markAsDone = (id) => {
-    setTodos(() => {
-      return todos.map((todo) => {
-        if (todo.id === id) {
+    setTodos(
+
+      todos.map((prevTodo) => {
+        if(prevTodo.id === id){
           return {
-            ...todo,
-            isMark: true,
+            ...prevTodo, 
+            isMark: true, 
           };
-        } else {
-          return todo;
         }
-      });
-    });
+        return prevTodo;
+        }
+        )
+    );
   };
 
   return (
@@ -74,7 +75,7 @@ const TodoList = () => {
         {todos.map((todo) => {
           return (
             <li key={todo.id}>
-              <span style={todo.isMark ? {textDecorationLine:"line-through"}: {}}>{todo.tasks}</span>
+              <span style={todo.isMark ? {textDecorationLine:"line-through", backgroundColor:"red"}: {}}>{todo.tasks}</span>
               <button onClick={() => deleteTodo(todo.id)}>Delete</button>
               <button onClick={() => markAsDone(todo.id)}>Mark as Done</button>
             </li>
