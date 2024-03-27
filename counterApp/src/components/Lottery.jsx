@@ -1,11 +1,12 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
-import { randomNumGen, sum } from "./helper";
+import { randomNumGen} from "./helper";
 import Ticket from "./Ticket";
 
-const Lottery = ({n}) => {
+const Lottery = ({n,winCond}) => {
+
   let [ticket, setTicket] = useState(randomNumGen(n));
-  let isWinner = sum(ticket) === 20;
+  let isWinner = winCond(ticket);
 
   let buyTicket = () => {
     setTicket(randomNumGen(n));
