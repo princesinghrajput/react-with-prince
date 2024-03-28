@@ -1,17 +1,13 @@
+import { useState } from "react";
 import "./App.css";
-import Lottery from "./components/Lottery";
+import Counter from "./components/Counter";
 
 function App() {
-
-//winning condition
-  let winningCond = (ticket) =>{
-    return ticket[0]===0
-  }
-
+  let [state, setState] = useState(true);
   return (
     <div>
-    <Lottery n={4} winCond={winningCond}/>
-    <Lottery n={5} winCond={winningCond}/>
+      <button onClick={() => setState(!state)}>Toggle</button>
+      {state ? <Counter /> : ""}
     </div>
   );
 }
